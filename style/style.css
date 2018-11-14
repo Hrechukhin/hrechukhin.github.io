@@ -78,6 +78,14 @@ body.dark-page {
 body.dark-page .content-body {
   background: #000000;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+} 
+a:hover{
+  color: #ffdb43;
+}
 /* 2) Page Loader
 ----------------------------------------------------------------------------- */
 .page-loader {
@@ -371,6 +379,7 @@ body.dark-page .content-body {
   top: -14px;
 }
 .top-min .dropdown-menu {
+  z-index: 88;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
@@ -1152,7 +1161,7 @@ button:focus {
   background: #0f0f0f;
   border-bottom: 1px solid #000000;
   border-left: 1px solid #000000;
-}
+} 
 /* 7.c) resume section
 ----------------------------------------------------------------------------- */
 .resume-list {
@@ -1450,7 +1459,7 @@ button:focus {
   -o-transition: all 0.6s ease 0s;
   -ms-transition: all 0.6s ease 0s;
   -webkit-backface-visibility: hidden;
-  max-width: 221px;
+  max-width: 100%;
   margin: 0 auto 30px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -2027,6 +2036,7 @@ label span {
   -moz-box-shadow: none !important;
   -o-box-shadow: none !important;
   -ms-box-shadow: none !important;
+  z-index: 1;
 }
 .dark-page .form-control:focus {
   background: #0f0f0f;
