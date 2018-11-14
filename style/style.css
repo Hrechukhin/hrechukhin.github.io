@@ -776,6 +776,7 @@ button:focus {
   display: table;
   height: 100%;
   width: 100%;
+  background: rgb(0%, 0%, 0%, 0.8);
 }
 .over-fly-area .middle-overfly {
   display: table-cell;
@@ -856,7 +857,7 @@ button:focus {
 /* 6) Hero
 ----------------------------------------------------------------------------- */
 .hero-01 {
-  background: url(../img/bg8.jpg) no-repeat center;
+  background: url(../img/profile-thumb.jpg) no-repeat center;
   background-size: cover;
   position: fixed;
   height: 100%;
