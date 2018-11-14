@@ -1150,6 +1150,9 @@ button:focus {
 .desc-mini h4 {
   margin: 0;
 }
+.desc-mini:hover > a{
+  color: #ffdb43;
+}
 .desc-mini .mid-desc-mini {
   display: table-cell;
   vertical-align: middle;
