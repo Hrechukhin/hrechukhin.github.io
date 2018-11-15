@@ -1,3 +1,12 @@
+::selection {
+  background: #ffdb43;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #ffdb43;
+  text-shadow: none;
+}
 body {
   letter-spacing: 0.3px;
   background: #ffffff;
