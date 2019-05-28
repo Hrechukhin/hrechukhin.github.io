@@ -1,2 +1,0 @@
-# hrechukhinevhen.github.io
-Resume
