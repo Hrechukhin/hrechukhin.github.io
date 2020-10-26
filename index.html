@@ -1,431 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="robots" content="index" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-control-active img{box-sizing:content-box;pointer-events:none}.gm-control-active:hover img:nth-child(1),.gm-control-active:active img:nth-child(1),.gm-control-active:active img:nth-child(2){display:none}
-</style>
+    <meta name="robots" content="index"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">.gm-control-active img {
+        box-sizing: content-box;
+        pointer-events: none
+    }
 
-<style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
-</style>
-<style type="text/css">
-@media print {
-  .gm-style .gmnoprint, .gmnoprint {
-    display:none;
-  }
-}
-@media screen {
-  .gm-style .gmnoscreen, .gmnoscreen {
-    display:none;
-  }
-}
-</style>
-<style type="text/css">.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
-</style>
-<style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-</style>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hello! I am Web Developer in Ukraine</title>
-<meta name="description" content="Front-End Developer From Ukraine / Using technologies: Javascript / HTML / CSS / jQuery / Git / GULP / SaSS / Bootstrap 4 / Webpack / BEM / Wordpress / SEO / AMP">
+    .gm-control-active:hover img:nth-child(1), .gm-control-active:active img:nth-child(1), .gm-control-active:active img:nth-child(2) {
+        display: none
+    }
+    </style>
 
-<meta property="og:title" content="Hello! I am Front-End Developer in Ukraine">
-<meta property="og:description" content="Front-End Developer From Ukraine / Using technologies: Javascript / HTML / CSS / jQuery / Git / GULP / SaSS / Bootstrap 4 / Webpack / BEM / Wordpress / SEO / AMP">
-<meta property="og:url" content="https://hrechukhin.github.io/">
-<meta property="og:img" content="img/me.jpg">
+    <style type="text/css">.gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+        font-size: 10px;
+        box-sizing: border-box
+    }
+    </style>
+    <style type="text/css">
+        @media print {
+            .gm-style .gmnoprint, .gmnoprint {
+                display: none;
+            }
+        }
 
-<link rel="apple-touch-icon" href="img/favicon.png">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link href="style/bootstrap.min.css" rel="stylesheet">
-<link href="style/style.css" rel="stylesheet" type="text/css">
-<link href="style/theme-custom.css" rel="stylesheet">
-<link href="style/magnific-popup.css" rel="stylesheet">
+        @media screen {
+            .gm-style .gmnoscreen, .gmnoscreen {
+                display: none;
+            }
+        }
+    </style>
+    <style type="text/css">.dismissButton {
+        background-color: #fff;
+        border: 1px solid #dadce0;
+        color: #1a73e8;
+        border-radius: 4px;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        height: 36px;
+        cursor: pointer;
+        padding: 0 24px
+    }
+
+    .dismissButton:hover {
+        background-color: rgba(66, 133, 244, 0.04);
+        border: 1px solid #d2e3fc
+    }
+
+    .dismissButton:focus {
+        background-color: rgba(66, 133, 244, 0.12);
+        border: 1px solid #d2e3fc;
+        outline: 0
+    }
+
+    .dismissButton:hover:focus {
+        background-color: rgba(66, 133, 244, 0.16);
+        border: 1px solid #d2e2fd
+    }
+
+    .dismissButton:active {
+        background-color: rgba(66, 133, 244, 0.16);
+        border: 1px solid #d2e2fd;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+    }
+
+    .dismissButton:disabled {
+        background-color: #fff;
+        border: 1px solid #f1f3f4;
+        color: #3c4043
+    }
+    </style>
+    <style type="text/css">.gm-style-pbc {
+        transition: opacity ease-in-out;
+        background-color: rgba(0, 0, 0, 0.45);
+        text-align: center
+    }
+
+    .gm-style-pbt {
+        font-size: 22px;
+        color: white;
+        font-family: Roboto, Arial, sans-serif;
+        position: relative;
+        margin: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello! I am Web Developer in Ukraine</title>
+    <meta name="description"
+          content="Front-End Developer From Ukraine / Using technologies: Javascript / HTML / CSS / jQuery / Git / GULP / SaSS / Bootstrap 4 / Webpack / BEM / Wordpress / SEO / AMP">
+
+    <meta property="og:title" content="Hello! I am Front-End Developer in Ukraine">
+    <meta property="og:description"
+          content="Front-End Developer From Ukraine / Using technologies: Javascript / HTML / CSS / jQuery / Git / GULP / SaSS / Bootstrap 4 / Webpack / BEM / Wordpress / SEO / AMP">
+    <meta property="og:url" content="https://hrechukhin.github.io/">
+    <meta property="og:img" content="img/me.jpg">
+
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/theme-custom.css" rel="stylesheet">
+    <link href="style/magnific-popup.css" rel="stylesheet">
 </head>
 <body class="dark-page">
-  <div class="page-loader" style="display: none;">
+<div class="page-loader" style="display: none;">
     <div class="v-align-center">
-      <div class="middle-content">
-        <div class="img-p-area"> <img src="img/profile-thumb.jpeg" alt="" class="img-thumbnail no-radius"></div>
-        <span class="itsme">Hello!</span>
-        <h4>Evhen Hrechukhin</h4>
-        <p>please wait</p>
-        <div class="anim-pg">
-          <span></span>
+        <div class="middle-content">
+            <div class="img-p-area"><img src="img/profile-thumb.jpeg" alt="" class="img-thumbnail no-radius"></div>
+            <span class="itsme">Hello!</span>
+            <h4>Evhen Hrechukhin</h4>
+            <p>please wait</p>
+            <div class="anim-pg">
+                <span></span>
+            </div>
+            <div class="force-pg">
+                <button type="button" id="force-close-pg" class="btn">Skip This →</button>
+            </div>
         </div>
-        <div class="force-pg"><button type="button" id="force-close-pg" class="btn">Skip This →</button></div>
-      </div>
     </div>
-  </div>
-  <div class="body-area">
+</div>
+<div class="body-area">
     <header class="main-header">
-      <div class="nav-main">
-        <span class="itsme">Resume </span>
-        <a href="#menu-ovefly" class="toogle-overfly"><i class="fa fa-bars open-t"></i> <i class="fa fa-times close-t"></i></a>
-        <a href="#share-ovefly" class="toogle-overfly"><i class="fa fa-plus open-t"></i> <i class="fa fa-times close-t"></i></a>
-      </div>
-      <div class="over-fly-area" id="menu-ovefly">
-        <div class="inner-overfly">
-          <div class="middle-overfly">
-            <h2 class="title-over">Menu</h2>
-            <nav class="main-nav" id="menu">
-              <ul class="nav">
-                <li class=""><a href="#aboutme" class="inner-link" data-text="About Me"><span>About Me</span></a></li>
-                <li class=""><a href="#resume" class="inner-link" data-text="My Resume"><span>Resume</span></a></li>
-              </ul>
-            </nav>
-          </div>
+        <div class="nav-main">
+            <span class="itsme">Resume </span>
+            <a href="#menu-ovefly" class="toogle-overfly"><i class="fa fa-bars open-t"></i> <i
+                    class="fa fa-times close-t"></i></a>
+            <a href="#share-ovefly" class="toogle-overfly"><i class="fa fa-plus open-t"></i> <i
+                    class="fa fa-times close-t"></i></a>
         </div>
-      </div>
-      <div class="over-fly-area" id="search-ovefly">
-        <div class="inner-overfly">
-          <div class="middle-overfly">
-            <h2 class="title-over">Find My Articles</h2>
-            <form class="from-search">
-              <div class="form-group">
-                <input type="search" name="s" class="form-control input-lg input-search" placeholder="Input Text Here !">
-              </div>
-              <div class="form-group">
-                <button class="btn btnc2"><span>Search</span></button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="over-fly-area" id="share-ovefly">
-        <div class="inner-overfly">
-          <div class="middle-overfly">
-            <h2 class="title-over">Share This Page</h2>
-            <div class="social-share">
-              <a href="https://plus.google.com/share?url=https://hrechukhin.github.io/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a>
-              <a href="https://pinterest.com/pin/create/button/?url=https://hrechukhin.github.io/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
-              <a href="https://www.facebook.com/share.php?u=https://hrechukhin.github.io/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/home?status=https://hrechukhin.github.io/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="over-fly-area" id="contact-ovefly">
-        <div class="inner-overfly">
-          <div class="middle-overfly">
-            <h2 class="title-over">Contact me</h2>
-            <div class="social-share">
-              <a href="tg:380964045840" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Telegram"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-              <a href="mailto:hrechukhin@gmail.com" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-              <a href="tel:380964045840" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Phone"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
-              <a href="skype:grechukhin.skype" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Skype"><i class="fa fa-skype" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-01">
-        <div class="hero-border">
-          <div class="top"></div>
-          <div class="bottom"></div>
-          <div class="left"></div>
-          <div class="right">
-            <div class="v-area">
-              <div class="v-middle  show-span">
-                <div class="p5" id="label-menu">
-                  <span style="opacity: 1;">M</span>
-                  <span style="opacity: 1;">y</span>
-                  <span style="opacity: 1;"> </span>
-                  <span style="opacity: 1;">P</span>
-                  <span style="opacity: 1;">o</span>
-                  <span style="opacity: 1;">r</span>
-                  <span style="opacity: 1;">t</span>
-                  <span style="opacity: 1;">f</span>
-                  <span style="opacity: 1;">o</span>
-                  <span style="opacity: 1;">l</span>
-                  <span style="opacity: 1;">i</span>
-                  <span style="opacity: 1;">o</span>
+        <div class="over-fly-area" id="menu-ovefly">
+            <div class="inner-overfly">
+                <div class="middle-overfly">
+                    <h2 class="title-over">Menu</h2>
+                    <nav class="main-nav" id="menu">
+                        <ul class="nav">
+                            <li class=""><a href="#aboutme" class="inner-link"
+                                            data-text="About Me"><span>About Me</span></a></li>
+                            <li class=""><a href="#resume" class="inner-link" data-text="My Resume"><span>Resume</span></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="my-thumb">
-          <div class="thumb-top">
-            <a href="img/profile-thumb.jpeg" class="image-popup" title="This is Me.">
-              <img src="img/profile-thumb.jpeg" class="img-thumbnail no-radius" alt=""></a>
+        <div class="over-fly-area" id="search-ovefly">
+            <div class="inner-overfly">
+                <div class="middle-overfly">
+                    <h2 class="title-over">Find My Articles</h2>
+                    <form class="from-search">
+                        <div class="form-group">
+                            <input type="search" name="s" class="form-control input-lg input-search"
+                                   placeholder="Input Text Here !">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btnc2"><span>Search</span></button>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-          <div class="content-hero">
-            <div class="v-content">
-              <span class="itsme">Hello! </span>
-              <h4 class="font-normal">My name is</h4>
-              <h1 class="myname">Evhen Hrechukhin</h1>
-              <h3 class="font-normal with-line">Front-End Developer From Kharkiv Ukraine</h3>
-              <p><a href="#contact-ovefly" class="btn btnc1 toogle-overfly"><span>Hire Me</span></a> <a href="Hrechukhin_Evhen.pdf" download class="btn btnc1"><span>Download Resume</span></a></p>
-            </div>
-          </div>
         </div>
-      </header>
-      <div class="content-body">
+        <div class="over-fly-area" id="share-ovefly">
+            <div class="inner-overfly">
+                <div class="middle-overfly">
+                    <h2 class="title-over">Share This Page</h2>
+                    <div class="social-share">
+                        <a href="https://plus.google.com/share?url=https://hrechukhin.github.io/" target="_blank"
+                           data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Google Plus"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https://hrechukhin.github.io/"
+                           target="_blank" data-toggle="tooltip" data-placement="bottom" title=""
+                           data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com/share.php?u=https://hrechukhin.github.io/" target="_blank"
+                           data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/home?status=https://hrechukhin.github.io/" target="_blank"
+                           data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i
+                                class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="over-fly-area" id="contact-ovefly">
+            <div class="inner-overfly">
+                <div class="middle-overfly">
+                    <h2 class="title-over">Contact me</h2>
+                    <div class="social-share">
+                        <a href="tg:380964045840" data-toggle="tooltip" data-placement="bottom" title=""
+                           data-original-title="Telegram"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                        <a href="mailto:hrechukhin@gmail.com" data-toggle="tooltip" data-placement="bottom" title=""
+                           data-original-title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="tel:380964045840" data-toggle="tooltip" data-placement="bottom" title=""
+                           data-original-title="Phone"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                        <a href="skype:grechukhin.skype" data-toggle="tooltip" data-placement="bottom" title=""
+                           data-original-title="Skype"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-01">
+            <div class="hero-border">
+                <div class="top"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="right">
+                    <div class="v-area">
+                        <div class="v-middle  show-span">
+                            <div class="p5" id="label-menu">
+                                <span style="opacity: 1;">M</span>
+                                <span style="opacity: 1;">y</span>
+                                <span style="opacity: 1;"> </span>
+                                <span style="opacity: 1;">P</span>
+                                <span style="opacity: 1;">o</span>
+                                <span style="opacity: 1;">r</span>
+                                <span style="opacity: 1;">t</span>
+                                <span style="opacity: 1;">f</span>
+                                <span style="opacity: 1;">o</span>
+                                <span style="opacity: 1;">l</span>
+                                <span style="opacity: 1;">i</span>
+                                <span style="opacity: 1;">o</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-thumb">
+                <div class="thumb-top">
+                    <a href="img/profile-thumb.jpeg" class="image-popup" title="This is Me.">
+                        <img src="img/profile-thumb.jpeg" class="img-thumbnail no-radius" alt=""></a>
+                </div>
+            </div>
+            <div class="content-hero">
+                <div class="v-content">
+                    <span class="itsme">Hello! </span>
+                    <h4 class="font-normal">My name is</h4>
+                    <h1 class="myname">Evhen Hrechukhin</h1>
+                    <h3 class="font-normal with-line">Front-End Developer From Kharkiv Ukraine</h3>
+                    <p><a href="#contact-ovefly" class="btn btnc1 toogle-overfly"><span>Hire Me</span></a> <a
+                            href="Evhen_Hrechukhin_-_Web_Software_Engineer.pdf" download class="btn btnc1"><span>Download Resume</span></a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-body">
         <section id="aboutme">
-          <div class="section-padd bg2">
-            <div class="container-body clearfix">
-              <div class="big-qoute">
-                <h3>Start where you are. Use what you have. Do what you can. <small>→ Evhen Hrechukhin</small></h3>
-              </div>
+            <div class="section-padd bg2">
+                <div class="container-body clearfix">
+                    <div class="big-qoute">
+                        <h3>Start where you are. Use what you have. Do what you can. <small>→ Evhen Hrechukhin</small>
+                        </h3>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="section-padd top-bold-border">
-            <div class="container-body clearfix">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="img-pr">
-                    <a href="img/me.jpg" class="image-popup" title="This is Me.">
-                      <img src="img/me.jpg" alt="">
-                    </a>
-                  </div>
-                  <h2 class="title"><span>Greetings!</span></h2>
-                  <p>Around 2+ years of experience as a Front-End Developer.</p>
-                  <p>Experience in developing applications using HTML5, CSS3, JavaScript, TypeScript, Angular. </p>
-                  <p>Collaborate with creative teams and development teams to bring ideas and projects to life.</p>
-                  <p><hr></p>
-                  <p> <b>My technology stack:</b> Javascript / Angular / TypeScript </p>
-                  <p><b>My additional technology stack:</b> HTML / CSS / GIT / Bootstrap / Webpack / SCSS </p>
-                  <p><b>Git repository:</b> <a href="https://github.com/Hrechukhin" target="_blank">github.com/hrechukhin</a></p>
+            <div class="section-padd top-bold-border">
+                <div class="container-body clearfix">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="img-pr">
+                                <a href="img/me.jpg" class="image-popup" title="This is Me.">
+                                    <img src="img/me.jpg" alt="">
+                                </a>
+                            </div>
+                            <h2 class="title"><span>Greetings!</span></h2>
+                            <p>I have been doing web development for almost three years, during which time I have gained
+                                experience at all stages of product development, from planning to release. I set up
+                                servers, did front-end and back-end, and had experience in search engine optimization,
+                                but still, my strong point is the interface, which I spent more time on.</p>
+                            <p>
+                            <hr>
+                            </p>
+                            <p><b>My technology stack:</b> Javascript / HTML / CSS / Wordpress </p>
+                            <p><b>My additional technology stack:</b> SASS / GIT / Bootstrap / Webpack / Foundation / </p>
+                            <p><b>Git repository:</b> <a href="https://github.com/Hrechukhin" target="_blank">github.com/hrechukhin</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="clearfix br-t">
-            <div class="col-md-12 col-sm-12 no-padding">
-              <div class="desc-mini no-br-l">
-                <div class="mid-desc-mini">
-                  <h3>Contacts</h3>
+            <div class="clearfix br-t">
+                <div class="col-md-12 col-sm-12 no-padding">
+                    <div class="desc-mini no-br-l">
+                        <div class="mid-desc-mini">
+                            <h3>Contacts</h3>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="bg2 p30 br-b">
-            <div class="container-body clearfix">
-              <div class="clearfix br-t br-r ">
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Birthdate</h4>
-                      <p>05/03/1990</p>
+            <div class="bg2 p30 br-b">
+                <div class="container-body clearfix">
+                    <div class="clearfix br-t br-r ">
+                        <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                            <div class="desc-mini">
+                                <div class="mid-desc-mini">
+                                    <h4>Birthdate</h4>
+                                    <p>05/03/1990</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                            <div class="desc-mini">
+                                <div class="mid-desc-mini">
+                                    <h4>Telegram</h4>
+                                    <p><a href="tg:+38 (096) 404 58 40">+38 (096) 404 58 40</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                            <div class="desc-mini">
+                                <div class="mid-desc-mini">
+                                    <h4>Phone </h4>
+                                    <p><a href="tel:+38 (096) 404 58 40">+38 (096) 404 58 40</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                            <div class="desc-mini">
+                                <div class="mid-desc-mini">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:hrechukhin@gmail.com">hrechukhin@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                            <div class="desc-mini">
+                                <div class="mid-desc-mini">
+                                    <h4>Website</h4>
+                                    <p><a href="https://hrechukhin.github.io">hrechukhin.github.io</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
+                            <div class="desc-mini">
+                                <div class="mid-desc-mini">
+                                    <h4>Address </h4>
+                                    <p>Kharkiv, Ukraine</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Telegram</h4>
-                      <p><a href="tg:+38 (096) 404 58 40">+38 (096) 404 58 40</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Phone </h4>
-                      <p><a href="tel:+38 (096) 404 58 40">+38 (096) 404 58 40</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Email</h4>
-                      <p><a href="mailto:hrechukhin@gmail.com">hrechukhin@gmail.com</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Website</h4>
-                      <p> <a href="https://hrechukhin.github.io">hrechukhin.github.io</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 no-padding">
-                  <div class="desc-mini">
-                    <div class="mid-desc-mini">
-                      <h4>Address </h4>
-                      <p>Kharkiv, Ukraine</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </section>
         <section id="resume">
-          <div class="section-padd">
-            <div class="container-body clearfix">
-              <h2 class="title"><span>Employement</span></h2>
-              <div class="white-space-10"></div>
-              <ul class="resume-list">
-                <li>
-                  <h4><i class="fa fa-calendar ic-re"></i>August 2019 - Until Now</h4>
-                  <p><a target="_blank" href="javascript:;">BeKey</a></p>
-                  <h3><i class="fa fa-building-o ic-re"></i> Front-End Developer</h3>
-                  <p>Using technologies: Javascript / HTML / CSS / Angular / TypeScript / Git / SCSS / Bootstrap </p>
-                </li>
-                <li>
-                  <h4><i class="fa fa-calendar ic-re"></i>November 2017 - August 2019</h4>
-                  <p><a target="_blank" href="https://joseartgallery.com">Jose Art Gallery</a></p>
-                  <h3><i class="fa fa-building-o ic-re"></i> Front-End Developer</h3>
-                  <p>Using technologies: Javascript / HTML / CSS / jQuery / Git / GULP / SCSS / Bootstrap </p>
-                </li>
-                <li>
-                  <h4><i class="fa fa-calendar ic-re"></i>July 2017 - November 2017</h4>
-                  <a target="_blank" href="javascript:;"><i>Pinofran</i></a>
-                  <h3><i class="fa fa-building-o ic-re"></i>Front-End Developer</h3>
-                  <p>Using technologies: Javascript / jQuery / SCSS / GULP / Bootstrap / BEM / Git</p>
-                </li>
-              </ul>
-              <h2 class="title"><span>Education</span></h2>
-              <div class="white-space-10"></div>
-              <ul class="resume-list">
-                <li>
-                  <h4><i class="fa fa-calendar ic-re"></i> 2007-2013</h4>
-                  <i>Specialist Degree</i>
-                  <h3><i class="fa fa-building-o ic-re"></i>Kharkiv National University of Construction and Architecture</h3>
-                  <p>Heat supply and exploitation of secondary heat energy resources</p>
-                </li>
-              </ul>
-              <h2 class="title"><span>Skills</span></h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="list-unstyled list-progress">
-                    <li>
-                      <h4>Javascript  <small>90%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="90%" style="width: 80%;"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>Angular   <small>90%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="90%" style="width: 60%;"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>TypeScript   <small>90%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="90%" style="width: 70%;"></div>
-                      </div>
-                    </li>
-                  </ul>
+            <div class="section-padd">
+                <div class="container-body clearfix">
+                    <h2 class="title"><span>Employment</span></h2>
+                    <div class="white-space-10"></div>
+                    <ul class="resume-list">
+                        <li>
+                            <h4><i class="fa fa-calendar ic-re"></i>August 2019 - Until Now</h4>
+                            <p><a target="_blank" href="javascript:;">BeKey</a></p>
+                            <h3><i class="fa fa-building-o ic-re"></i> Front-End Developer</h3>
+                            <p>Using technologies: Javascript / PHP / HTML / CSS / jQuery / Wordpress / Wordpress RestAPI / Angular / TypeScript / Git / SASS /
+                                Bootstrap </p>
+                        </li>
+                        <li>
+                            <h4><i class="fa fa-calendar ic-re"></i>November 2017 - August 2019</h4>
+                            <p><a target="_blank" href="https://joseartgallery.com">Jose Art Gallery</a></p>
+                            <h3><i class="fa fa-building-o ic-re"></i> Front-End Developer</h3>
+                            <p>Using technologies: Javascript / HTML / CSS / jQuery / Git / GULP / SCSS / Bootstrap </p>
+                        </li>
+                        <li>
+                            <h4><i class="fa fa-calendar ic-re"></i>July 2017 - November 2017</h4>
+                            <a target="_blank" href="javascript:;"><i>Pinofran</i></a>
+                            <h3><i class="fa fa-building-o ic-re"></i>Front-End Developer</h3>
+                            <p>Using technologies: Javascript / jQuery / SCSS / GULP / Bootstrap / BEM / Git</p>
+                        </li>
+                    </ul>
+                    <h2 class="title"><span>Education</span></h2>
+                    <div class="white-space-10"></div>
+                    <ul class="resume-list">
+                        <li>
+                            <h4><i class="fa fa-calendar ic-re"></i> 2007-2013</h4>
+                            <i>Specialist Degree</i>
+                            <h3><i class="fa fa-building-o ic-re"></i>Kharkov National University of Construction and
+                                Architecture</h3>
+                            <p>Heat supply and exploitation of secondary heat energy resources</p>
+                        </li>
+                    </ul>
+                    <h2 class="title"><span>Skills</span></h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled list-progress">
+                                <li>
+                                    <h4>Javascript <small>90%</small></h4>
+                                    <div class="progress-line">
+                                        <div class="line" data-holdwidth="90%" style="width: 80%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>Wordpress <small>90%</small></h4>
+                                    <div class="progress-line">
+                                        <div class="line" data-holdwidth="90%" style="width: 60%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>PHP <small>90%</small></h4>
+                                    <div class="progress-line">
+                                        <div class="line" data-holdwidth="90%" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled list-progress">
+                                <li>
+                                    <h4><span>HTML</span> <small>100%</small></h4>
+                                    <div class="progress-line">
+                                        <div class="line" data-holdwidth="100%" style="width: 80%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>CSS <small>90%</small></h4>
+                                    <div class="progress-line">
+                                        <div class="line" data-holdwidth="90%" style="width: 90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>GULP <small>90%</small></h4>
+                                    <div class="progress-line">
+                                        <div class="line" data-holdwidth="90%" style="width: 90%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="title-2">Soft Skills</h3>
+                    <div class="clearfix text-center">
+                        <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
+                            <div class="mb30">
+                                <div class="chart" data-percent="90"><span class="percent">90</span>
+                                    <canvas height="90" width="90"></canvas>
+                                </div>
+                                <h4>Creative </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6  col-xs-6 no-padding">
+                            <div class="mb30">
+                                <div class="chart" data-percent="90"><span class="percent">90</span>
+                                    <canvas height="90" width="90"></canvas>
+                                </div>
+                                <h4>Leadership </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
+                            <div class="mb30">
+                                <div class="chart" data-percent="90"><span class="percent">90</span>
+                                    <canvas height="90" width="90"></canvas>
+                                </div>
+                                <h4>Communication </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 no-padding">
+                            <div class="mb30">
+                                <div class="chart" data-percent="90"><span class="percent">90</span>
+                                    <canvas height="90" width="90"></canvas>
+                                </div>
+                                <h4>Confident </h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                  <ul class="list-unstyled list-progress">
-                    <li>
-                      <h4><span>HTML</span>  <small>100%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="100%" style="width: 80%;"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>CSS <small>90%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="90%" style="width: 90%;"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <h4>Webpack  <small>90%</small></h4>
-                      <div class="progress-line">
-                        <div class="line" data-holdwidth="90%" style="width: 90%;"></div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <h3 class="title-2">Soft Skills</h3>
-              <div class="clearfix text-center">
-                <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="90"><span class="percent">90</span><canvas height="90" width="90"></canvas></div>
-                    <h4>Creative   </h4>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6  col-xs-6 no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="90"><span class="percent">90</span><canvas height="90" width="90"></canvas></div>
-                    <h4>Leadership   </h4>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6  no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="90"><span class="percent">90</span><canvas height="90" width="90"></canvas></div>
-                    <h4>Communication </h4>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 no-padding">
-                  <div class="mb30">
-                    <div class="chart" data-percent="90"><span class="percent">90</span><canvas height="90" width="90"></canvas></div>
-                    <h4>Confident </h4>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </section>
         <section id="contact">
-          <div class="clearfix br-t">
-            <div class="col-md-3 col-xs-6 no-padding">
-              <div class="desc-mini no-br-l">
-                <div class="mid-desc-mini">
-                  <h3><a href="https://www.facebook.com/" class="black-link" target="_blank">&nbsp;<i class="fa fa-facebook"></i> &nbsp;</a></h3>
-                  <p><a href="https://www.facebook.com/" class="black-link" target="_blank">Facebook</a></p>
+            <div class="clearfix br-t">
+                <div class="col-md-3 col-xs-6 no-padding">
+                    <div class="desc-mini no-br-l">
+                        <div class="mid-desc-mini">
+                            <h3><a href="https://www.facebook.com/" class="black-link" target="_blank">&nbsp;<i
+                                    class="fa fa-facebook"></i> &nbsp;</a></h3>
+                            <p><a href="https://www.facebook.com/" class="black-link" target="_blank">Facebook</a></p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-xs-6 no-padding">
-              <div class="desc-mini">
-                <div class="mid-desc-mini">
-                  <h3><a href="https://www.instagram.com/hrechukhin/" class="black-link" target="_blank">&nbsp;<i class="fa fa-instagram"></i> &nbsp;</a></h3>
-                  <p><a href="https://www.instagram.com/hrechukhin/" class="black-link" target="_blank">Instagram</a></p>
+                <div class="col-md-3 col-xs-6 no-padding">
+                    <div class="desc-mini">
+                        <div class="mid-desc-mini">
+                            <h3><a href="https://www.instagram.com/hrechukhin/" class="black-link" target="_blank">&nbsp;<i
+                                    class="fa fa-instagram"></i> &nbsp;</a></h3>
+                            <p><a href="https://www.instagram.com/hrechukhin/" class="black-link" target="_blank">Instagram</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-xs-6 no-padding">
-              <div class="desc-mini">
-                <div class="mid-desc-mini">
-                  <h3><a href="https://github.com/Hrechukhin" class="black-link" target="_blank">&nbsp;<i class="fa fa-github" aria-hidden="true"></i>&nbsp;</a></h3>
-                  <p><a href="https://github.com/Hrechukhin" class="black-link" target="_blank">GitHub</a></p>
+                <div class="col-md-3 col-xs-6 no-padding">
+                    <div class="desc-mini">
+                        <div class="mid-desc-mini">
+                            <h3><a href="https://github.com/Hrechukhin" class="black-link" target="_blank">&nbsp;<i
+                                    class="fa fa-github" aria-hidden="true"></i>&nbsp;</a></h3>
+                            <p><a href="https://github.com/Hrechukhin" class="black-link" target="_blank">GitHub</a></p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-xs-6 no-padding">
-              <div class="desc-mini">
-                <div class="mid-desc-mini">
-                  <h3><a href="https://www.linkedin.com/in/evheniy-hrechukhin/" class="black-link" target="_blank">&nbsp;<i class="fa fa-linkedin"></i>&nbsp;</a></h3>
-                  <p><a href="https://www.linkedin.com/in/evheniy-hrechukhin/" class="black-link" target="_blank">Linkedin</a></p>
+                <div class="col-md-3 col-xs-6 no-padding">
+                    <div class="desc-mini">
+                        <div class="mid-desc-mini">
+                            <h3><a href="https://www.linkedin.com/in/evheniy-hrechukhin/" class="black-link"
+                                   target="_blank">&nbsp;<i class="fa fa-linkedin"></i>&nbsp;</a></h3>
+                            <p><a href="https://www.linkedin.com/in/evheniy-hrechukhin/" class="black-link"
+                                  target="_blank">Linkedin</a></p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
-      </div>
-      <footer class="main-footer">
+    </div>
+    <footer class="main-footer">
         © 2020 Hello! I am Evhen Hrechukhin
-      </footer>
-    </div>
-    <div class="over-fly-area" id="load-works">
-      <div class="inner-overfly" id="work-wait-msg">
+    </footer>
+</div>
+<div class="over-fly-area" id="load-works">
+    <div class="inner-overfly" id="work-wait-msg">
         <div class="middle-overfly">
-          <h2 class="title-over">PLASE WAIT...</h2>
-     </div>
-      </div>
-      <div class="work-close"><a href="#" class="close-panel-work btn btn-xs btn-default">Close</a></div>
-      <div id="load-work-html"></div>
+            <h2 class="title-over">PLASE WAIT...</h2>
+        </div>
     </div>
-    <script src="https://use.fontawesome.com/0af9e97522.js"></script>
-    <script src="script/SimpleAjaxUploader.min.js"></script>
-    <script src="script/jquery.min.js"></script>
-    <script src="script/jquery.easing-1.3.pack.js"></script>
-    <script src="script/bootstrap.min.js"></script>
-    <script src="script/jquery.easypiechart.min.js"></script>
-    <script src="script/isotope.pkgd.min.js"></script>
-    <script src="script/jquery.validate.min.js"></script>
-    <script src="script/jquery.magnific-popup.min.js"></script>
-    <script src="script/metisMenu.js"></script>
-    <script src="script/theme.js"></script>
-    <script src="script/js" type="text/javascript"></script>
-  </body>
-  </html>
+    <div class="work-close"><a href="#" class="close-panel-work btn btn-xs btn-default">Close</a></div>
+    <div id="load-work-html"></div>
+</div>
+<script src="https://use.fontawesome.com/0af9e97522.js"></script>
+<script src="script/SimpleAjaxUploader.min.js"></script>
+<script src="script/jquery.min.js"></script>
+<script src="script/jquery.easing-1.3.pack.js"></script>
+<script src="script/bootstrap.min.js"></script>
+<script src="script/jquery.easypiechart.min.js"></script>
+<script src="script/isotope.pkgd.min.js"></script>
+<script src="script/jquery.validate.min.js"></script>
+<script src="script/jquery.magnific-popup.min.js"></script>
+<script src="script/metisMenu.js"></script>
+<script src="script/theme.js"></script>
+<script src="script/js" type="text/javascript"></script>
+</body>
+</html>
